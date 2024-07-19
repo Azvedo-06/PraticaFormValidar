@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/logomarca1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FormulárioPratica</title>
+</head>
+
+<body>
+    <div class="content">
+        <img class="logo" src="imagens/logomarca1.png" alt="logomarca">
+        <h1>Formulário</h1>
+        <form>
+            <div>
+                <input type="text" placeholder="Digite seu nome" class="inputs">
+                <span class="span-required">Nome deve ter 3 caracteres</span>
+            </div>
+            <div>
+                <input type="email" placeholder="Digite seu Email" class="inputs">
+                <span class="span-required">Digite um email válido</span>
+            </div>
+            <div>
+                <input type="password" placeholder="Digite uma senha" class="inputs">
+                <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
+            </div>
+            <div>
+                <input type="password" placeholder="Digite uma senha" class="inputs">
+                <span class="span-required">As senhas devem ser compatíveis</span>
+            </div>
+            <textarea name="descricao" id="descricao" cols="25" rows="10"
+                placeholder="Fala um pouco sobre você... "></textarea>
+            <p>Sexo:</p>
+            <div class="blox-select">
+                <div>
+                    <input type="radio" id="m" value="m" name="sexo">
+                    <label for="m">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="f" value="f" name="sexo">
+                    <label for="f">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="o" value="o" name="sexo">
+                    <label for="o">Outro</label>
+                </div>
+            </div>
+            <p>Quais suas experiências?</p>
+            <div class="blox-select">
+                <div>
+                    <input type="checkbox" id="html" value="html" name="experiencias">
+                    <label for="html">HTML 5</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" value="css" name="experiencias">
+                    <label for="css">CSS 3</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js" value="js" name="experiencias">
+                    <label for="js">JavaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="php" value="php" name="experiencias">
+                    <label for="php">PHP</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sass" value="sass" name="experiencias">
+                    <label for="sass">SASS</label>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
