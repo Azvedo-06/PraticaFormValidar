@@ -1,10 +1,84 @@
-
-
-
-
-
-html {
+* {
     padding: 0%;
     margin: 0%;
+}
+
+$clean: #fff;
+$dark: #181818;
+$primaria: #1e1e1e;
+$segundaria: #9333ff;
+$terceira: indigo;
+
+body {
     font-family: "Roboto", Verdana ;
+    background-color: $dark;
+    color: $clean;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 2rem;
+}
+
+.content {
+    background-color: $primaria;
+    padding: 2rem;
+    margin: 3rem;
+    border-radius: 10px;
+    min-width: 30%;
+    overflow: auto; // conforme diminuir a tela vc pode navegar com scrols na tela
+    h1 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; // espaço entre os item do form
+    }
+    .span-required {
+        display: none;
+    }
+    .inputs {
+        padding: 8px 5px;
+        outline: none;
+        border-radius: 5px;
+        background-color: $dark;
+        border: 2px solid $dark;
+        color: $clean;
+        width: 100%;
+        box-sizing: border-box;
+        &:focus {
+            border-color: $segundaria;
+            transition: 500ms;
+        }
+    }
+    .blox-select {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem; // espaço entre os itens 
+        font-weight: bolder;
+    }
+    button[type="submit"] {
+        padding: 1rem;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        margin-top: 1rem;
+        background-color: $terceira;
+        color: $clean;
+        cursor: pointer;
+        &:hover {
+            background-color: $segundaria;
+            transition: 300ms;
+        }
+    }
+}
+
+@media(max-width: 645px) {
+    .blox-select {
+        flex-direction: column;
+        gap: 5px;
+    }
 }
