@@ -38,6 +38,9 @@ body {
     }
     .span-required {
         display: none;
+        font-size: 12px;
+        margin: 3px 0 0 3px;
+        color: red;
     }
     .inputs {
         padding: 8px 5px;
@@ -59,7 +62,7 @@ body {
         gap: 1rem; // espaço entre os itens 
         font-weight: bolder;
     }
-    button[type="submit"] {
+    button[type="submit"] { //type="submit" vai modificar todos os button do tipo submit
         padding: 1rem;
         font-size: 1rem;
         outline: none;

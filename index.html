@@ -14,22 +14,22 @@
 
 <body>
     <div class="content">
-        <h1>Formulário &#128512;</h1>
-        <form>
+        <h1>Formulário <img src="imagens/logomarca1.png" alt="logomarca"></h1>
+        <form id="form">
             <div>
-                <input type="text" placeholder="Digite seu nome" class="inputs">
+                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nomevalidar()">
                 <span class="span-required">Nome deve ter 3 caracteres</span>
             </div>
             <div>
-                <input type="email" placeholder="Digite seu Email" inputmode="email" class="inputs">
+                <input type="email" placeholder="Digite seu Email" inputmode="email" class="inputs required" oninput="emailValidacao()">
                 <span class="span-required">Digite um email válido</span>
             </div>
             <div>
-                <input type="password" placeholder="Digite uma senha" class="inputs">
+                <input type="password" placeholder="Digite uma senha" class="inputs required" oninput="senhaValidar()">
                 <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
             </div>
             <div>
-                <input type="password" placeholder="Digite uma senha" class="inputs">
+                <input type="password" placeholder="Digite uma senha" class="inputs required" oninput="compararSenhas()">
                 <span class="span-required">As senhas devem ser compatíveis</span>
             </div>
             <textarea name="descricao" id="descricao" cols="25" rows="10" class="inputs" placeholder="Fala um pouco sobre você... "></textarea>
@@ -75,5 +75,5 @@
         </form>
     </div>
 </body>
-
+    <script src="js/script.js"></script>
 </html>
